@@ -19,9 +19,14 @@ export const MOVIE_DETAILS = gql`
       rating
       medium_cover_image
       description_intro
-      summary
       language
       genres
+    }
+    suggestions (id: $movieId) {
+      id
+      medium_cover_image
+      title
+      rating
     }
   }
 `;
